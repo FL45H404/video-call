@@ -39,7 +39,7 @@ $("#join-form").submit(async function (e) {
     if(options.token) {
       console.log(options.token);
       $("#success-alert-with-token").css("display", "block");
-      $("#success-alert-with-token a").attr("href", `index.html?appid=${options.appid}&channel=${options.channel}&token=${options.token}`);
+      $("#success-alert-with-token a").attr("href", `home.html?appid=${options.appid}&channel=${options.channel}&token=${options.token}`);
     } else {
       $("#success-alert").css("display", "block");
     }
